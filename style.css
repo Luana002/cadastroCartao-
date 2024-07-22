@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background-color: rgb(80, 80, 80);
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+    padding: 100px;
+    width: 600px; /*largura*/
+    overflow: visible;
+}
+.card-display {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    right: -100px;
+    top: 50%;
+}
+.card {
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(135deg, #790000, #db0b0b);
+    padding: 20px;
+    box-shadow: 0 7px 8px rgb(189, 189, 189);
+    position: relative;
+    top: -110px;
+}
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.card-bottom label{
+    color: rgb(255, 255, 255);
+    
+}
+.expiry-cvv {
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+}
+#cardName, #cardNumber, #expiry-date, #cardCvv {
+    background-color: #790000;    
+}
+button {
+    background-color: rgb(175, 0, 0);
+}

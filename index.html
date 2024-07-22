@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.js">
+</head>
+<body>
+    <div class="container">
+        <form class="card-bottom">
+            <label for="cardName">Nome impresso</label>
+            <input type="text" name="carName" id="cardName" placeholder="Digite seu nome">
+            <br>
+            <label for="cardNumber">Número do cartão</label>
+            <input type="text" name="cardNumber" id="cardNumber" placeholder="Número do cartão">
+            <br>
+            <div class="expiry-cvv">
+                <div>
+                    <label for="expiry-date">Data de Validade</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA" oninput="updateCard()">
+                </div>
+                <div>
+                    <label for="cardCvv">CVV</label>
+                    <input type="text" id="cardCvv" name="cardCvv" placeholder="CVV" oninput="updateCard()">
+                </div>
+            </div>
+            <button id="button">Enviar</button>
+        </form>
+        <div class="card-display">
+            <div class="card">
+                <div class="number" id="display-number">0000 0000 0000 0000</div>
+                <div class="name" id="display-name">nome</div>
+                <div class="date" id="display-date">MM/AA</div>
+                <div class="cvv" id="display-cvv">cvv</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
